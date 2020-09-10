@@ -1,0 +1,5 @@
+{
+  "classlist": ["car", "ball", "human"],
+  "loaddir": "C:/Path/To/Training/Data",
+  "savedir": "./annotations"
+}
