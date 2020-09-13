@@ -132,18 +132,19 @@ class Annotator:
 
             if index == self.polygonID:
                 colour = "#"
+                category = self.Annotations[self.curCanvData[self.polygonID]["category"]]
 
-                if (self.categoryMode.value + 1) % 3 == 0:
+                if (category.value + 1) % 3 == 0:
                     colour += "ff"
                 else:
                     colour += "00"
                 
-                if (self.categoryMode.value + 1) % 2 == 0:
+                if (category.value + 1) % 2 == 0:
                     colour += "ff"
                 else:
                     colour += "00"
                 
-                if (self.categoryMode.value + 1) % 4 == 0:
+                if (category.value + 1) % 4 == 0:
                     colour += "ff"
                 else:
                     colour += "00"
